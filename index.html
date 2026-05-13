@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Buddy | Odaklanmanın En Tatlı Yolu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigasyon -->
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <h1 class="text-2xl font-bold text-purple-700">PomodoroBuddy.</h1>
+        <a href="#download" class="bg-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-700 transition">Hemen İndir</a>
+    </nav>
+
+    <!-- Hero Section (Giriş) -->
+    <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h2 class="text-5xl font-bold leading-tight mb-6">
+                Odaklanmak Hiç Bu Kadar <span class="text-purple-600">Keyifli</span> Olmamıştı!
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+                25 dakikalık derin çalışma seanslarından sonra seni bekleyen tatlı bir sürpriz var. Geliştirdiğim bu özel Pomodoro sayacı ile verimliliğini artırırken molaların tadını çıkar.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#download" class="bg-purple-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:transform hover:-translate-y-1 transition">Ücretsiz İndir (.exe)</a>
+                <a href="#features" class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-xl font-bold hover:bg-purple-50 transition">Özellikleri Gör</a>
+            </div>
+        </div>
+        
+        <!-- Fotoğraf Alanı (Buraya ekran görüntüsü gelecek) -->
+    <div class="md:w-1/2 flex justify-center p-4">
+    <!-- max-w-lg ile genişliği sınırladık, h-auto ile dikdörtgen formu verdik -->
+    <div class="w-full max-w-xl h-auto bg-white rounded-2xl shadow-2xl border-4 border-white overflow-hidden">
+        <img 
+            src="pomodoro-uygulama-ici-gorsel.png" 
+            alt="Pomodoro Uygulama Ekranı" 
+            class="w-full h-full object-contain block"
+        >
+    </div>
+</div>
+    </section>
+
+    <!-- Tanıtım Videosu -->
+    <section id="features" class="bg-purple-900 py-20 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-10">Uygulama Nasıl Çalışıyor?</h3>
+            <div class="aspect-video bg-black rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border-8 border-purple-800">
+                <span class="text-gray-500 italic">
+                    <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="pomodoro-tanitim-video.mp4" type="video/mp4">
+                            Tarayıcınız video etiketini desteklemiyor.
+                </video>
+                </span>
+                <!-- <video controls class="w-full h-full"><source src="tanitim.mp4" type="video/mp4"></video> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Özellikler -->
+    <section class="py-20 max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+        <div class="text-center p-8 rounded-2xl hover:bg-white hover:shadow-xl transition">
+            <div class="text-4xl mb-4">⏳</div>
+            <h4 class="font-bold text-xl mb-2">25/5 Disiplini</h4>
+            <p class="text-gray-500">Klasik Pomodoro tekniği ile beynini yormadan maksimum verim almanı sağlar.</p>
+        </div>
+        <div class="text-center p-8 rounded-2xl hover:bg-white hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🐶</div>
+            <h4 class="font-bold text-xl mb-2">Mola Arkadaşı</h4>
+            <p class="text-gray-500">Mola başladığında beliren uykulu dostumuz ve Lo-Fi müzik ile stresini anında at.</p>
+        </div>
+        <div class="text-center p-8 rounded-2xl hover:bg-white hover:shadow-xl transition">
+            <div class="text-4xl mb-4">💻</div>
+            <h4 class="font-bold text-xl mb-2">Kolay Kurulum</h4>
+            <p class="text-gray-500">Kurulum gerektirmez. .exe dosyasını indir ve hemen kullanmaya başla.</p>
+        </div>
+    </section>
+
+    <!-- İndirme Alanı -->
+   <section id="download" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto gradient-bg rounded-[3rem] p-12 text-center text-white shadow-2xl">
+        <h3 class="text-4xl font-bold mb-6">Verimliliğini Bugün Artır!</h3>
+        <p class="text-purple-100 mb-10 text-lg">Hemen indir ve odaklanmayı başla.</p>
+        
+        <!-- Button yerine A etiketi kullanıldı -->
+        <a href="pomodoro.zip" 
+           download="pomodoro.zip" 
+           class="inline-block bg-white text-purple-700 px-12 py-5 rounded-2xl font-black text-xl shadow-xl hover:scale-105 transition active:scale-95">
+            ŞİMDİ İNDİR (.EXE)
+        </a>
+
+        <p class="mt-6 text-sm text-purple-200 opacity-75">Sadece Windows için mevcuttur.</p>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 Irfan Yiğit tarafından kodlandı. | IT Intern Project</p>
+    </footer>
+
+</body>
+</html>
